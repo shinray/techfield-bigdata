@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twitterProducer.iml" filepath="$PROJECT_DIR$/.idea/modules/twitterProducer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twitterProducer-build.iml" filepath="$PROJECT_DIR$/.idea/modules/twitterProducer-build.iml" />
+    </modules>
+  </component>
+</project>
