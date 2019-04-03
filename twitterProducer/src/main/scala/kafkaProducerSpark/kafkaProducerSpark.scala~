@@ -14,11 +14,11 @@
 //object kafkaProducerSpark {
 //
 //  // twitter super sekrit keys shh don't tell
-//  private val CONSUMER_KEY = "removed"
-//  private val CONSUMER_SECRET = "removed"
+//  private val CONSUMER_KEY = "WXC50jvoWct4SzHLHHeHI7MzD"
+//  private val CONSUMER_SECRET = "pDA0JMsoka4RUGnKzwOKJBWxNN98JopCvOc6ymom4u1Ac1DnyP"
 //  // Access level: READ_ONLY
-//  private val ACCESS_TOKEN = "removed"
-//  private val ACCESS_SECRET = "removed"
+//  private val ACCESS_TOKEN = "1105476295713087488-W3nJ7Fmty1TekFcFOTWlYr5JB0lxXN"
+//  private val ACCESS_SECRET = "dXW78QUoHa25WLHWPw2LryU9VCasuXirqIGQxTDzLV0Hc"
 //
 //  // Keywords to look for
 //  private val keywords = Array("article13", "usavchi", "travel")

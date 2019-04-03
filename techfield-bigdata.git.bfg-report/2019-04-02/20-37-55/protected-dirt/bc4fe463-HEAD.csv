@@ -1,0 +1,4 @@
+ac3417095c63083687144aff338d26ecc23c4a60,MODIFY,regular-file,capston-1/src/main/scala/producer/twitterkeys.scala,386,7-10
+ac3417095c63083687144aff338d26ecc23c4a60,MODIFY,regular-file,capston-2/src/main/scala/producer/twitterkeys.scala,386,7-10
+c0733a197a172b0ea6433bf4d620438d86a7f345,MODIFY,regular-file,twitterProducer/src/main/scala/kafkaProducerSpark/kafkaProducerSpark.scala,2424,17-18;20-21
+1557038b26a76b626372c8b37c77f1c8f755b75a,MODIFY,regular-file,twitterProducer/src/main/scala/twitterProducer/twitterProducer.java,5537,19-20;22-23
