@@ -13,7 +13,8 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 object twitterProducer {
 //  // Define
-  val BOOTSTRAP_SERVERS = "localhost:9092,localhost:9093"
+//  val BOOTSTRAP_SERVERS = "localhost:9092,localhost:9093"
+  val BOOTSTRAP_SERVERS = "sandbox.hortonworks.com:6667"
 //  val BOOTSTRAP_SERVERS = "localhost:9092,localhost:9093,localhost:9094"
   val SERIALIZER_CLASS = "org.apache.kafka.common.serialization.StringSerializer"
   val KAFKA_TOPIC = "twitterCapstone"
@@ -31,7 +32,8 @@ object twitterProducer {
     props.put("value.serializer",SERIALIZER_CLASS)
 
     endpoint.trackTerms(Lists.newArrayList(
-      "article13","earthbound","mother3","undertale","deltarune","cheekibreeki","apache","kafka","savethemanuals"))
+      "article13","earthbound","mother3","undertale","deltarune"
+      ,"cheekibreeki","apache","kafka","savethemanuals","worksonmymachine"))
 
   }
 

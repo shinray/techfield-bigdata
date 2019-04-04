@@ -2,6 +2,11 @@ package consumer
 
 import java.util.Properties
 
+// Hbase
+//import org.apache.hadoop.hbase.HBaseConfiguration
+//import org.apache.hadoop.hbase.client.ConnectionFactory
+//import org.apache.spark.sql.execution.datasources.hbase.HBaseTableCatalog
+
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
@@ -14,11 +19,18 @@ import org.apache.spark.streaming.kafka010.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 object twitterConsumer {
+
+  // HBase
+//  val conf = new HBaseConfiguration()
+//  val connection = ConnectionFactory.createConnection(conf)
+//  val admin = connection.getAdmin()
+
   val topicName = "twitterCapstone"
   val groupName = "kafkaConsumerGroup"
 
   val kafkaParams = Map[String, Object](
-    "bootstrap.servers" -> "localhost:9092,localhost:9093",
+//    "bootstrap.servers" -> "localhost:9092,localhost:9093",
+    "bootstrap.servers" -> "sandbox.hortonworks.com:6667", // hortonworks
     "key.deserializer" -> classOf[StringDeserializer],
     "value.deserializer" -> classOf[StringDeserializer],
     "group.id" -> groupName,
@@ -65,13 +77,32 @@ object twitterConsumer {
   ))
   var df = spark.createDataFrame(spark.sparkContext.emptyRDD[Row],outSchema)
 
+  // hbase catalog
+  def catalog =
+    s"""{
+       |"table":{"namespace":"default", "name":"twitterCapstone"},
+       |"rowkey":"screen_name",
+       |"columns":{
+       |"col0":{"cf":"rowkey", "col":"screen_name", "type":"string"},
+       |"col1":{"cf":"tweet", "col":"created_at", "type":"string"},
+       |"col2":{"cf":"tweet", "col":"text", "type":"string"},
+       |"col3":{"cf":"user", "col":"follower_count", "type":"long"},
+       |"col4":{"cf":"user", "col":"friends_count", "type":"long"},
+       |"col5":{"cf":"user", "col":"location", "type":"string"},
+       |}
+       |}""".stripMargin
+
   // function
   def quitConsumer(): Unit = {
     df.collect()
-    df.coalesce(1).write.mode("overwrite").json("/home/shinray/capston1json")
+//    df.coalesce(1).write.mode("overwrite").json("/home/shinray/capston1json")
+//    df.coalesce(1).write
+//        .options(Map(HBaseTableCatalog.tableCatalog -> catalog, HBaseTableCatalog.newTable -> "5"))
+//        .format("org.apache.hadoop.hbase.spark")
+//      .format("org.apache.spark.sql.execution.datasources.hbase")
+//        .save()
     println("SAVEing ❤")
   }
-
   def main (args: Array[String]) : Unit = {
     var counter: Int = 0
     val stream = KafkaUtils.createDirectStream(
@@ -99,6 +130,7 @@ object twitterConsumer {
               .withColumn("screen_name", testdf.col("user.screen_name"))
               .drop("user")
           df = df.unionByName(testdf)
+//          df = df.union(testdf)
           df.show()
         })
       })
