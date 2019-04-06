@@ -106,3 +106,5 @@ project/plugins/project/
 
 **/twitterkeys.scala
 **/twitterProducer.java
+
+twittersentiment/config.py
