@@ -108,3 +108,4 @@ project/plugins/project/
 **/twitterProducer.java
 
 twittersentiment/config.py
+capston4/src/main/python/config.py
