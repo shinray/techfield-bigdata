@@ -7,61 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cacaf636-a107-4ec8-b2cf-2be16ffb52a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/capston_2_producer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_code_findbugs_jsr305_1_3_9_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_guava_guava_14_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_hbc_core_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_hbc_twitter4j_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_joauth_6_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_codec_commons_codec_1_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_logging_commons_logging_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_2_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_25_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_simple_1_7_20_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_twitter4j_twitter4j_core_4_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_twitter4j_twitter4j_stream_4_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/capston-2-producer-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/capston-2-producer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/producer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/artifacts/capston_2_consumer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/artifacts/capston_2_producer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_101tec_zkclient_0_10_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_github_luben_zstd_jni_1_3_5_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_typesafe_scala_logging_scala_logging_2_11_3_9_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_yammer_metrics_metrics_core_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__net_sf_jopt_simple_jopt_simple_5_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_kafka_kafka_2_11_2_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_kafka_kafka_clients_2_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_yetus_audience_annotations_0_5_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_lz4_lz4_java_1_5_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_xerial_snappy_snappy_java_1_1_7_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/src/main/scala/consumer/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capston-2/src/main/scala/producer/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_6_7_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_7_9_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_7_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_6_7_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_7_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__com_github_luben_zstd_jni_1_3_2_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_luben_zstd_jni_1_3_5_4_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__jline_jline_0_9_94_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__net_jpountz_lz4_lz4_1_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_kafka_kafka_clients_0_10_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_kafka_kafka_clients_2_1_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_0_10_2_11_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_0_10_2_11_2_1_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_zookeeper_zookeeper_3_4_6_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_apache_zookeeper_zookeeper_3_4_13_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_lz4_lz4_java_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_lz4_lz4_java_1_5_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/libraries/sbt__org_xerial_snappy_snappy_java_1_1_2_6_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_xerial_snappy_snappy_java_1_1_7_2_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/modules/capston-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/modules/capston-2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/src/main/scala/consumer/twitterConsumer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/src/main/scala/consumer/twitterConsumer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capston-2/src/main/scala/producer/twitterProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-2/src/main/scala/producer/twitterProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StackOverflowSurvey/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StackOverflowSurvey/src/main/java/StackOverFlowSurvey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../amazonKinesis/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../amazonKinesis/src/main/scala/producer/producer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/capston-2-producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/capston-2-producer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/producer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="144">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -98,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/twitterkeys.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="180">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -107,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="216">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -127,11 +84,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="992" />
+    <option name="y" value="24" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -186,8 +143,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,6 +207,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3108651438000" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3247965154" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2567920773" />
       </map>
@@ -269,10 +227,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25291827" />
+      <window_info id="aws.explorer" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25573394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,24 +263,24 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/twitterkeys.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/twitterkeys.scala">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="216">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/producer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="144">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
