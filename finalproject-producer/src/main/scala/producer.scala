@@ -9,8 +9,8 @@ object producer {
   val BOOTSTRAP_SERVERS = "localhost:9092"
   val SERIALIZER_CLASS = "org.apache.kafka.common.serialization.StringSerializer"
   val KAFKA_TOPIC = "CryptoCompare"
-  val CRYPTO_FSYMS = Seq("BTC","ETH") // symbols of interest
-  val CRYPTO_TSYMS = Seq("DOGE","USD","EUR") // symbols to convert to
+  val CRYPTO_FSYMS = Seq("BTC","ETH","LTC","EOS","BCH","BNB","ZEC","ETC","DASH","MITH","ABBC","XPM","XRP","XMR") // symbols of interest
+  val CRYPTO_TSYMS = Seq("DOGE","USD","EUR","JPY","GBP","CAD") // symbols to convert to
   val CC_API_KEY = Constants.CRYPTOCOMPARE_API_KEY
 
   // Kafka producer settings
@@ -19,6 +19,7 @@ object producer {
   props.put("key.serializer",SERIALIZER_CLASS)
   props.put("value.serializer",SERIALIZER_CLASS)
 
+  // HTTP GET to String
   def get(url: String, connectionTimeout: Int = 5000, readTimeout: Int = 5000, requestMethod: String = "GET") = {
     import java.net.{URL, HttpURLConnection}
     val connection = (new URL(url)).openConnection.asInstanceOf[HttpURLConnection]
@@ -31,11 +32,14 @@ object producer {
     content
   }
 
+  // simplistic url request builder
   def requestBuilder(fsyms: Seq[String], tsyms: Seq[String]): String = {
     val sb: StringBuilder = new StringBuilder
     sb ++= "https://min-api.cryptocompare.com/data/pricemulti?"
+
     sb ++= "fsyms="
     sb ++= fsyms.mkString(",")
+
     sb += '&'
     sb ++= "tsyms="
     sb ++= tsyms.mkString(",")
@@ -62,6 +66,7 @@ object producer {
 
     println("request url: " + requestURL)
 
+    // Main loop
     while (keepRunning) {
       try {
         val content = get(requestURL)
@@ -79,6 +84,7 @@ object producer {
       Thread.sleep(1000 * 30)
     }
 
+    // Cleanup
     producer.close()
     println("goodbye ❤")
   }
