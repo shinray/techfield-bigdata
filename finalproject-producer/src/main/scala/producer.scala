@@ -71,7 +71,7 @@ object producer {
       try {
         val content = get(requestURL)
         val record = new ProducerRecord[String,String](KAFKA_TOPIC,content)
-        println(record.toString)
+        println(content)
         producer.send(record)
       } catch {
         case ioe: java.io.IOException =>  {

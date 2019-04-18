@@ -20,3 +20,9 @@ if __name__ == "__main__":
 
     # Define Kafka consumer
     stream = KafkaUtils.createDirectStream(ssc, topics, kafkaParams)
+
+    stream.foreachRDD(
+        lambda rdd: rdd.foreach(
+            lambda record: print(record)
+        )
+    )
