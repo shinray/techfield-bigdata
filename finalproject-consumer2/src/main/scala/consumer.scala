@@ -7,6 +7,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType}
 import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.elasticsearch.spark.sql._ // elasticsearch
 
 object consumer {
 
@@ -14,6 +15,9 @@ object consumer {
   val topicName = "CryptoCompare"
   val groupName = "kafkaConsumerGroup"
   val bootstrapServers = "localhost:9092" // single node
+  // ES
+  val esServers = "localhost"
+  val esPorts = "9200"
 
   // needs to be in a collection format
   val topics = topicName.split(",").map(_.trim)
@@ -55,6 +59,9 @@ object consumer {
 
   // Sparky
   val spark = SparkSession.builder
+    .config("es.index.auto.create","true")
+    .config("spark.es.nodes",esServers)
+    .config("spark.es.port",esPorts)
     .master("local[*]")
     .appName("CryptoCompare")
     .getOrCreate()
@@ -305,6 +312,9 @@ object consumer {
             "keyspace" -> "finalproject"
           ))
           .save()
+
+        // Send to Elastic
+        df.saveToEs("crypto/json")
       })
     )
 

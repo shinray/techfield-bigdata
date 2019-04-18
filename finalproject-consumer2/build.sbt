@@ -4,6 +4,8 @@ version := "0.1"
 
 scalaVersion := "2.11.8"
 lazy val sparkVersion = "2.3.0"
+//https://stackoverflow.com/questions/50907437/sbt-test-error-java-lang-nosuchmethoderror-net-jpountz-lz4-lz4blockinputstream
+lazy val excludeJpountz = ExclusionRule(organization = "net.jpountz.lz4", name = "lz4")
 
 // Spark
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core
