@@ -2,9 +2,9 @@ import java.util.UUID
 
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.sql.functions._ // UDF()
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType}
+import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType, TimestampType}
 import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.elasticsearch.spark.sql._ // elasticsearch
@@ -41,6 +41,7 @@ object consumer {
 
   val schema = StructType(List(
     StructField("id",StringType,true),
+    StructField("date",StringType,true),
     StructField("BTC",currencySchema,true),
     StructField("ETH",currencySchema,true),
     StructField("LTC",currencySchema,true),
@@ -87,6 +88,7 @@ object consumer {
     session.execute(
       "CREATE TABLE IF NOT EXISTS finalproject.crypto (" +
         "id text PRIMARY KEY," +
+        "date text," +
         "btc_doge double," +
         "btc_usd double," +
         "btc_eur double," +
@@ -176,6 +178,8 @@ object consumer {
 
     // User defined func for creating guid
     val druid = udf(() => UUID.randomUUID().toString)
+    val timestamp = udf(() => (java.time.LocalDateTime.now.format(java.time.format.DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss"))))
+    // yyyy-MM-dd HH:mm:ss.SSS
 
     // Create stream
     val stream = KafkaUtils.createDirectStream(
@@ -190,6 +194,7 @@ object consumer {
         var df = spark.read.schema(schema).json(instream)
         df = df
           .withColumn("id", coalesce(df("id"), druid())) // insert random UUID as primary key
+          .withColumn("date", coalesce(df("date"), timestamp())) // for Kibana visualization
           .withColumn("btc_doge",df("BTC.DOGE"))
           .withColumn("btc_usd",df("BTC.USD"))
           .withColumn("btc_eur",df("BTC.EUR"))
